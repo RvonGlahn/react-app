@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Players from './Players';
 import { loadPlayer, loadSuggest, loadLists, loadFIFAVersion } from '../../services/fifa';
 
-class Input extends React.Component {
+class InputForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,7 +20,7 @@ class Input extends React.Component {
             ability1Value: '',
             ability2Name: '',
             ability2Value: '',
-            fifa_versions: [21, 20, 19, 18, 17, 16, 15],
+            fifa_versions: [22, 21, 20, 19, 18, 17, 16, 15],
             suggestion: [],
             posList: [],
             attrList: [],
@@ -52,12 +52,10 @@ class Input extends React.Component {
         var reg = /[^a-zA-Z0-9]/;
         this.setState({ [event.target.name]: event.target.value });
 
-        // only if
         if (this.state.name.length >= 4 && event.target.name === 'name') {
             let sanitized_name = this.state.name.replace(reg, '');
 
             let suggest_json = await loadSuggest(sanitized_name);
-            // convert this res in python to json
             const suggest = JSON.parse(suggest_json);
             this.setState({ ...this.state, suggestion: suggest });
         }
@@ -81,14 +79,13 @@ class Input extends React.Component {
         reqJSON.ability2Name = reqJSON.ability2Name.trim();
 
         const players = await loadPlayer(reqJSON);
-        //const players = JSON.parse(players_json);
 
         this.setState({ ...this.state, players: players, suggestion: [] });
     }
 
     render() {
         return (
-            <Container style={{ paddingTop: '75px', paddingBottom: '100px' }}>
+            <Container style={{ paddingTop: '75px', paddingBottom: '300px' }}>
                 <h1 className="heading">Suche Spieler in FIFA 21</h1>
                 <Form>
                     <Form.Row>
@@ -191,4 +188,4 @@ class Input extends React.Component {
     }
 }
 
-export default Input;
+export default InputForm;

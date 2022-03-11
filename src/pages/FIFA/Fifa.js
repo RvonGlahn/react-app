@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from '../../components/FIFASearch/Input';
+import InputForm from '../../components/FIFASearch/InputForm';
 import { useEffect } from 'react';
 
 function Fifa() {
@@ -9,7 +9,7 @@ function Fifa() {
 
     return (
         <>
-            <Input />
+            <InputForm />
         </>
     );
 }

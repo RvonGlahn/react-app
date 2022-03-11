@@ -88,7 +88,7 @@ details[open] summary {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
+    .playercontainer {
         width: 95%;
         margin: 0 auto;
         text-align: center;

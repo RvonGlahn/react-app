@@ -1,7 +1,8 @@
-import React from "react";
-import PageContent from "../../components/PageContent";
-import { homeObjOne } from "./Data";
-import { useEffect } from "react";
+import React from 'react';
+import PageContent from '../../components/PageContent';
+import { homePage } from './Data';
+import { useEffect } from 'react';
+import TextField from '../../components/Text/TextField';
 
 function Home() {
     useEffect(() => {
@@ -10,7 +11,8 @@ function Home() {
 
     return (
         <>
-            <PageContent {...homeObjOne} />
+            <PageContent {...homePage} />
+            <TextField />
         </>
     );
 }

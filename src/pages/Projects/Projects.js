@@ -1,6 +1,6 @@
 import React from 'react';
 import PageContent from '../../components/PageContent';
-import { homeObjOne, homeObjTwo, homeObjThree, objFIFA } from './Data';
+import { BattleSnake, PhotoSort, FIFA, WebApp } from './Data';
 import { useEffect } from 'react';
 
 function Projects() {
@@ -10,10 +10,13 @@ function Projects() {
 
     return (
         <>
-            <PageContent {...objFIFA} />
-            <PageContent {...homeObjOne} />
-            <PageContent {...homeObjTwo} />
-            <PageContent {...homeObjThree} />
+            <PageContent {...WebApp} />
+            <hr></hr>
+            <PageContent {...FIFA} />
+            <hr></hr>
+            <PageContent {...PhotoSort} />
+            <hr></hr>
+            <PageContent {...BattleSnake} />
         </>
     );
 }

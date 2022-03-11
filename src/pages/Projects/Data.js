@@ -1,12 +1,12 @@
-export const homeObjOne = {
+export const PhotoSort = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
     topLine: 'PhotoSort',
-    headline: 'Ordne deine Fotos.',
+    headline: 'Sort your photos.',
     description:
-        'Die Fotos werden anhand der Exif-Daten, die sich in den Fotos befinden sortiert. ' +
-        'Das Ergebnis ist eine Ordnerstruktur mit allen Fotos die entweder nach Ort oder Aufnahme-Datum sortiert sind.',
+        'Photos get sorted based on the exif-data. Make sure that this data is available.' +
+        'Stores all photos in a folder structure that can be sorted by location or date.',
     buttonLabel: 'GitHub',
     imgStart: '',
     img: 'images/johnny_automatic_digital_camera.svg',
@@ -15,54 +15,50 @@ export const homeObjOne = {
     alt: 'Credit Card',
 };
 
-export const homeObjTwo = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'VisualizeSpendings',
-    headline: 'Visualisiere deine Finanzen mit Python.',
-    description:
-        'Lade die csv Dateien deiner Ausgaben bei deiner Bank oder Paypal herunter und visualisiere sie ' +
-        'schnell und unkompliziert mit Python und Anaconda.  ',
-    buttonLabel: 'GitHub',
-    imgStart: '',
-    img: 'images/increasing-bar-graph.svg',
-    img_credit: `<div style="margin-top: 20px">Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs" style="color:#ffffff">
-        DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon" style="color:#ffffff"> www.flaticon.com</a></div>`,
-    linkURL: '//www.github.com/RvonGlahn/VisualizeSpendings',
-    alt: 'Vault',
-};
-
-export const homeObjThree = {
+export const BattleSnake = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'MobileNetV2',
-    headline: 'Implementierung des MobileNetV2 from scratch.',
-    description:
-        'Das Training eines mobilen Netzes wurde mit Hilfe von Keras in Python implementiert. Dem Anwender steht eine ' +
-        ' GUI zur Verfügung mit der unterschiedliche Datensätze und Trainingsparameter auzuwählen sind.',
-    buttonLabel: 'Start Now',
+    topLine: 'BattleSnake',
+    headline: 'C++ BattleSnake Lib',
+    description: 'A C++ library that provides agents to play battlesnake in a global arena.',
+    buttonLabel: 'GitHub',
     imgStart: '',
-    img: 'images/nn.svg',
+    img: 'images/battlesnake.svg',
     img_credit: '',
-    linkURL: '//www.github.com/RvonGlahn/CNN',
+    linkURL: '//www.github.com/RvonGlahn/CPP-BattleSnake',
     alt: 'Vault',
 };
 
-export const objFIFA = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'FIFA Search API',
-    headline: 'Finde in FIFA 21 die vielversprechendsten Talente',
+export const WebApp = {
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Website',
+    headline: 'React App, Node Server, Flask API',
     description:
-        'Anhand von verschiedenen Filtern erfährst du alle wichtigen Attribute deiner Spieler. Starte deine Karriere mit talentierten aber auch bezahlbaren Spielern.',
-    buttonLabel: 'Zum Code',
+        'Here you can find all the code for this website. I created this out of curiosity and used differnet web techniques. ' +
+        'It is a good orientation if you want to do something similar.',
+    buttonLabel: 'GitHub',
+    imgStart: '',
+    img: 'images/webapp.svg',
+    img_credit: '',
+    linkURL: '//www.github.com/RvonGlahn/CPP-BattleSnake',
+    alt: 'Vault',
+};
+
+export const FIFA = {
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'FIFA Search API',
+    headline: 'Find the most promising talents in FIFA 22',
+    description: 'Use filters to find players for a succesful carrer.',
+    buttonLabel: 'GitHub',
     imgStart: '',
     img: 'images/fifa.svg',
-    img_credit: `Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons" style="color:#ffffff">Roundicons</a> from 
-            <a href="https://www.flaticon.com/" title="Flaticon" style="color:#ffffff"> www.flaticon.com</a>`,
+    img_credit: `Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons" style="color:#000000">Roundicons</a> from 
+            <a href="https://www.flaticon.com/" title="Flaticon" style="color:#000000"> www.flaticon.com</a>`,
     linkURL: '//www.github.com/RvonGlahn/FIFA_search',
     alt: 'Credit Card',
 };

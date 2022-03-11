@@ -33,6 +33,7 @@ public/env.js
 public/__ENV.js
 change.md
 *.log
+TODOS.*
 
 # debug
 access.log

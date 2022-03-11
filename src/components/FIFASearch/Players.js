@@ -66,7 +66,7 @@ function Players(props) {
     };
 
     return (
-        <div className="container">
+        <div className="playercontainer">
             {props.players.map((player, id) => (
                 <details key={id}>
                     <summary>

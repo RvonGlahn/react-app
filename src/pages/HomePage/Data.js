@@ -1,13 +1,12 @@
-export const homeObjOne = {
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Entwickler-Seite',
-    headline: 'Hallo in meinem Haus.',
+export const homePage = {
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Developer Page',
+    headline: 'Welcome to my page',
     description:
-        'Dies ist der Ort an dem du etwas über meine Programmierprojekte erfahren kannst. ' +
-        'Ich interessiere mich für alles Mögliche was mit Webtechniken und ' +
-        'künstlicher Intelligenz zu tun hat. Schau dir meine Projekte an, falls du Interesse hast. Oder suche nach den vielversprechendsten FIFA Talenten.',
+        'This is a place were you can find out about my latest projects. ' +
+        'I am interested in everything related to web technologies, machine learning and cloud computing. ',
     buttonLabel: 'FIFA',
     imgStart: '',
     img: 'images/haus.svg',
