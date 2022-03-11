@@ -8,15 +8,14 @@ const StyledButton = styled.button`
     background-color: ${colors.primaryDark};
     opacity: 0.7;
     border: 1px solid ${colors.primaryDark};
-    box-shadow: 1px 1px 1px ${colors.primaryDark};
+    box-shadow: 1.5px 1.5px 2px ${colors.secondaryDark};
     font-size: 1em;
     margin: 1em;
     padding: 0.25em 1em;
     border-radius: 8px;
     display: block;
     &:hover {
-        opacity: 0.8;
-        color: ${colors.darkText};
+        opacity: 1;
         background-color: ${colors.secondaryDark};
         border: 1px solid ${colors.secondaryDark};
     }

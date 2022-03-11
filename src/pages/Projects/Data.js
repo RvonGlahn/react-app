@@ -43,7 +43,7 @@ export const WebApp = {
     imgStart: '',
     img: 'images/webapp.svg',
     img_credit: '',
-    linkURL: '//www.github.com/RvonGlahn/CPP-BattleSnake',
+    linkURL: '//www.github.com/RvonGlahn/react-webapp',
     alt: 'Vault',
 };
 
@@ -53,7 +53,7 @@ export const FIFA = {
     lightTextDesc: false,
     topLine: 'FIFA Search API',
     headline: 'Find the most promising talents in FIFA 22',
-    description: 'Use filters to find players for a succesful carrer.',
+    description: 'Use filters to find players for a succesful career.',
     buttonLabel: 'GitHub',
     imgStart: '',
     img: 'images/fifa.svg',

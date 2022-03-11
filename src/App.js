@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Home from './pages/HomePage/Home';
+import Home from './pages/Home/Home';
 import Fifa from './pages/FIFA/Fifa';
 import Projects from './pages/Projects/Projects';
 import Blog from './pages/Blog/Blog';

@@ -2,6 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import MarkDownView from '../../components/MarkDown/MarkDownView';
+import { webapp, webapp_short } from './articles/webapp.js';
 import TextCard from '../../components/Text/Card';
 
 const MyContainer = styled(Container)`
@@ -12,31 +14,28 @@ const StyledRow = styled.div`
     padding: 2em;
 `;
 
-const text1 =
-    'With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to' +
-    ' additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a' +
-    'natural lead-in to additional content. With supporting text below as a natWith supporting text below as a natural lead-in' +
-    'to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as' +
-    'a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With' +
-    'supporting text below as a natural lead-in to additional content.ural lead-in to additional content.';
-
 function Blog() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
+    // create Effekt to load markdown blog
+
     return (
-        <MyContainer fluid="xl">
-            <StyledRow>
-                <TextCard text={text1} title="How to Build a React WebApp"></TextCard>
-            </StyledRow>
-            <StyledRow>
-                <TextCard text={text1} title="Machine Learning: Where to start?"></TextCard>
-            </StyledRow>
-            <StyledRow>
-                <TextCard text={text1} title="AWS Cloud Computing"></TextCard>
-            </StyledRow>
-        </MyContainer>
+        <div>
+            <MarkDownView content={webapp}></MarkDownView>
+            <MyContainer fluid="xl">
+                <StyledRow>
+                    <TextCard text={webapp_short} title="How to Build a React WebApp"></TextCard>
+                </StyledRow>
+                <StyledRow>
+                    <TextCard text={webapp_short} title="Machine Learning: Where to start?"></TextCard>
+                </StyledRow>
+                <StyledRow>
+                    <TextCard text={webapp_short} title="AWS Cloud Computing"></TextCard>
+                </StyledRow>
+            </MyContainer>
+        </div>
     );
 }
 

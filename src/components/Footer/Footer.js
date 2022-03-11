@@ -14,7 +14,7 @@ function Footer() {
                             RDev
                         </Link>
                     </div>
-                    <small className="website-rights">RDev © 2020</small>
+                    <small className="website-rights">RDev © 2022</small>
                     <div className="social-icons">
                         <Link className="social-icon-link" to={'//www.github.com/RvonGlahn'} target="_blank" aria-label="Github">
                             <FaGithub />

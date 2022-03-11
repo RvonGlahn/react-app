@@ -86,11 +86,11 @@ class InputForm extends React.Component {
     render() {
         return (
             <Container style={{ paddingTop: '75px', paddingBottom: '300px' }}>
-                <h1 className="heading">Suche Spieler in FIFA 21</h1>
+                <h1 className="heading">Search Players in FIFA 21</h1>
                 <Form>
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridName">
-                            <Form.Label>Name</Form.Label>
+                            <Form.Label>name</Form.Label>
                             <input
                                 type="text"
                                 className="form-input"
@@ -110,7 +110,7 @@ class InputForm extends React.Component {
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridPosition">
-                            <Form.Label>Position</Form.Label>
+                            <Form.Label>position</Form.Label>
                             <Form.Control as="select" name="position" value={this.state.position} onChange={this.handleChange}>
                                 {this.state['posList'].map((position, i) => (
                                     <option value={position} key={i}>
@@ -122,7 +122,7 @@ class InputForm extends React.Component {
                     </Form.Row>
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridAttribute1">
-                            <Form.Label>Skill 1</Form.Label>
+                            <Form.Label>skill 1</Form.Label>
                             <Form.Control as="select" name="ability1Name" value={this.state.ability1Name} onChange={this.handleChange}>
                                 {this.state['attrList'].map((position, i) => (
                                     <option value={position} key={i}>
@@ -132,12 +132,12 @@ class InputForm extends React.Component {
                             </Form.Control>
                         </Form.Group>
                         <Form.Group as={Col} controlId="formGridAtt1Value">
-                            <Form.Label>Wert Skill 1</Form.Label>
+                            <Form.Label>value 1</Form.Label>
                             <Form.Control name="ability1Value" value={this.state.ability1Value} onChange={this.handleChange} />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridAttribute2">
-                            <Form.Label>Skill 2</Form.Label>
+                            <Form.Label>skill 2</Form.Label>
                             <Form.Control as="select" name="ability2Name" value={this.state.ability2Name} onChange={this.handleChange}>
                                 {this.state['attrList'].map((position, i) => (
                                     <option value={position} key={i}>
@@ -148,18 +148,18 @@ class InputForm extends React.Component {
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridAtt2Value">
-                            <Form.Label>Wert Skill 2</Form.Label>
+                            <Form.Label>value 2</Form.Label>
                             <Form.Control type="text" name="ability2Value" value={this.state.ability2Value} onChange={this.handleChange} />
                         </Form.Group>
                     </Form.Row>
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridAge">
-                            <Form.Label>Maximales Alter</Form.Label>
+                            <Form.Label>max. age</Form.Label>
                             <Form.Control type="text" name="age" value={this.state.age} onChange={this.handleChange} />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridWert">
-                            <Form.Label>Maximaler Spieler Wert</Form.Label>
+                            <Form.Label>max. player value</Form.Label>
                             <Form.Control type="text" name="player_value" value={this.state.player_value} onChange={this.handleChange} />
                         </Form.Group>
 
@@ -177,7 +177,7 @@ class InputForm extends React.Component {
                     <Form.Row>
                         <Col></Col>
                         <Col>
-                            <ButtonSubmit buttonStyle="btn--primary--form" buttonSize="btn--wide" buttonColor="blue" onClick={this.handleClick} />
+                            <ButtonSubmit onClick={this.handleClick} />
                         </Col>
                         <Col></Col>
                     </Form.Row>
