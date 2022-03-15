@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import MarkDownView from '../../components/MarkDown/MarkDownView';
-import { webapp, webapp_short } from './articles/webapp.js';
+import { webapp } from './articles/webapp.js';
+import { cloud } from './articles/cloud';
+import { machine } from './articles/machine_learning';
+
 import TextCard from '../../components/Text/Card';
 
 const MyContainer = styled(Container)`
@@ -14,27 +17,39 @@ const StyledRow = styled.div`
     padding: 2em;
 `;
 
+const articles = [webapp, cloud, machine];
+
 function Blog() {
+    const [loadMD, setloadMD] = useState(false);
+    const [content, setContent] = useState('');
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
-    // create Effekt to load markdown blog
+    function toggleMarkDown(new_content) {
+        setContent(new_content);
+
+        if (loadMD) {
+            setloadMD(false);
+        } else {
+            setloadMD(true);
+        }
+    }
 
     return (
         <div>
-            <MarkDownView content={webapp}></MarkDownView>
-            <MyContainer fluid="xl">
-                <StyledRow>
-                    <TextCard text={webapp_short} title="How to Build a React WebApp"></TextCard>
-                </StyledRow>
-                <StyledRow>
-                    <TextCard text={webapp_short} title="Machine Learning: Where to start?"></TextCard>
-                </StyledRow>
-                <StyledRow>
-                    <TextCard text={webapp_short} title="AWS Cloud Computing"></TextCard>
-                </StyledRow>
-            </MyContainer>
+            {loadMD ? (
+                <MarkDownView content={content} clickEvent={() => toggleMarkDown('')}></MarkDownView>
+            ) : (
+                <MyContainer fluid="xl">
+                    {articles.map((article, id) => (
+                        <StyledRow key={id}>
+                            <TextCard text={article.summary} title={article.title} clickEvent={() => toggleMarkDown(article.content)}></TextCard>
+                        </StyledRow>
+                    ))}
+                </MyContainer>
+            )}
         </div>
     );
 }

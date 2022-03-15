@@ -1,6 +1,6 @@
 export const submitGetRequest = (url, headers) => {
     if (!url) {
-        throw new Error("Cannot submit GET request. URL is null or undefined.");
+        throw new Error('Cannot submit GET request. URL is null or undefined.');
     }
 
     return new Promise((resolve, reject) => {
@@ -8,9 +8,7 @@ export const submitGetRequest = (url, headers) => {
             .then((response) => {
                 if (!response.ok) {
                     reject({
-                        error: new Error(
-                            `Error response. (${response.status}) ${response.statusText}`
-                        ),
+                        error: new Error(`Error response. (${response.status}) ${response.statusText}`),
                         statusCode: response.status,
                         statusText: response.statusText,
                     });
@@ -29,9 +27,7 @@ export const submitGetRequest = (url, headers) => {
 
 export const submitPostRequest = (url, headers) => {
     if (!url) {
-        throw new Error(
-            "Cannot submit POST request. URL is null or undefined."
-        );
+        throw new Error('Cannot submit POST request. URL is null or undefined.');
     }
 
     return new Promise((resolve, reject) => {
@@ -42,11 +38,7 @@ export const submitPostRequest = (url, headers) => {
                     if (json.then) {
                         json.then(reject);
                     } else {
-                        reject(
-                            new Error(
-                                `Error response. (${response.status}) ${response.statusText}`
-                            )
-                        );
+                        reject(new Error(`Error response. (${response.status}) ${response.statusText}`));
                     }
                 } else {
                     const json = response.json();

@@ -5,20 +5,13 @@
     width: 15rem;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-}
-
 .details-wrapper {
     width: 75vw;
     margin: 0 auto;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-dark);
     box-shadow: 0 -1px 1px 5px #bfbfbf;
 }
+
 details {
     padding: 0.5rem;
     font: 1rem/1.2 sans-serif;
@@ -26,31 +19,26 @@ details {
 
 summary {
     padding: 0.25rem 0.25rem;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     font: bold 1.25rem/2 sans-serif;
-    color: floralwhite;
+    color: rgb(70, 70, 70);
     border: none;
-    border-radius: 3px;
-    box-shadow: 0 -1px 1px 1px var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 2px 4px 4px var(--secondary-dark);
     cursor: pointer;
     height: 3rem;
     overflow: hidden;
-    /*list-style: none;*/ /* Triangle not shown */
 }
-/* Triangle not shown - Style for Webkit-Browser */
-/*summary::-webkit-details-marker {
+summary::-webkit-details-marker {
     display: none;
-}*/
+}
 summary::before {
     padding-right: 0.25rem;
-    /*content: '+ ';*/ /* Instead of Triangle closed */
-}
-details[open] summary::before {
-    padding-right: 0.25rem;
-    /*content: '- ';*/ /* Instead of Triangle open */
 }
 
-/* Styling the summary in case of open 'details' */
+details[open] summary::before {
+    padding-right: 0.25rem;
+}
 details[open] summary {
     border-radius: 3px 3px 0 0;
 }
@@ -61,17 +49,10 @@ details[open] summary {
     margin: 0;
     padding: 0.25rem 1rem;
     background-color: white;
-    border-radius: 0 0 3px 3px;
-    box-shadow: 0 1px 1px 1px var(--primary-color);
-    color: var(--primary-color);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 2px 4px 4px var(--secondary-dark);
+    color: var(--secondary-dark);
     overflow: auto;
-}
-
-.money {
-    float: left;
-    padding-right: 1rem;
-    width: 15rem;
-    text-align: left;
 }
 
 .attribute {
@@ -92,14 +73,6 @@ details[open] summary {
         width: 95%;
         margin: 0 auto;
         text-align: center;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    img {
-        max-width: 100%;
     }
 
     .details-wrapper {
@@ -165,7 +138,6 @@ details[open] summary {
         text-align: left;
     }
 
-    /* Force table to not be like tables anymore */
     table,
     thead,
     tbody,

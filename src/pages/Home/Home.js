@@ -9,10 +9,23 @@ function Home() {
         window.scrollTo(0, 0);
     }, []);
 
+    const title = 'About Me';
+
+    const description = `
+        I am Rasmus a Software Developer based in Berlin. I work as a Cloud Computing Engineer. My interests range from
+        Machine Learning and Software Engineering topics to Web Developement and Cloud Computing.`;
+
+    const subtitle = 'Skills';
+
+    const itemsList = [
+        ['Python', 'C++', 'JavaScript + React'],
+        ['Machine Learning', 'Reinforcement Learning', 'AWS'],
+    ];
+
     return (
         <>
             <PageContent {...homePage} />
-            <TextField />
+            <TextField title={title} text={description} subtitle={subtitle} items={itemsList} />
         </>
     );
 }

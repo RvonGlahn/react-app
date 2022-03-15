@@ -24,12 +24,14 @@ class App extends React.Component {
         return (
             <Router>
                 <Navbar />
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/fifa" component={Fifa} />
-                    <Route path="/projects" component={Projects} />
-                    <Route path="/blog" component={Blog} />
-                </Switch>
+                <React.StrictMode>
+                    <Switch>
+                        <Route path="/" exact component={Home} />
+                        <Route path="/fifa" component={Fifa} />
+                        <Route path="/projects" component={Projects} />
+                        <Route path="/blog" component={Blog} />
+                    </Switch>
+                </React.StrictMode>
                 <Footer />
             </Router>
         );

@@ -1,5 +1,5 @@
 const content = `
-# Title Test App
+# Title Test ML
 
 - This is a List
 - cool stuff
@@ -23,12 +23,12 @@ const summary = `
     'supporting text below as a natural lead-in to additional content.ural lead-in to additional content.';
 `;
 
-const title = `How to Build a React WebApp`;
+const title = `How to start with Machine Learning`;
 
-const webapp = {
+const machine = {
     title: title,
     summary: summary,
     content: content,
 };
 
-export { webapp };
+export { machine };

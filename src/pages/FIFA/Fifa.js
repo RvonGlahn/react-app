@@ -7,11 +7,7 @@ function Fifa() {
         window.scrollTo(0, 0);
     }, []);
 
-    return (
-        <>
-            <InputForm />
-        </>
-    );
+    return <InputForm />;
 }
 
 export default Fifa;

@@ -1,8 +1,9 @@
 import React from 'react';
-import './Players.css';
+import './PlayerView.css';
 import { Table } from 'reactstrap';
+import { PropTypes } from 'prop-types';
 
-function Players(props) {
+function PlayerView(props) {
     const chunk = (arr, len) => {
         var chunks = [],
             i = 0,
@@ -99,4 +100,8 @@ function Players(props) {
     );
 }
 
-export default Players;
+PlayerView.propTypes = {
+    label_text: PropTypes.array,
+};
+
+export default PlayerView;
