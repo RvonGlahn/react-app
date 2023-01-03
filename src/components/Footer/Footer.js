@@ -11,10 +11,10 @@ function Footer() {
                     <div className="footer-logo">
                         <Link to="/" className="social-logo">
                             <FaDev className="navbar-icon" />
-                            RDev
+                            Rasmus
                         </Link>
                     </div>
-                    <small className="website-rights">RDev © 2022</small>
+                    <small className="website-rights">Rasmus © 2022</small>
                     <div className="social-icons">
                         <Link className="social-icon-link" to={'//www.github.com/RvonGlahn'} target="_blank" aria-label="Github">
                             <FaGithub />

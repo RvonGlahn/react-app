@@ -19,7 +19,7 @@ function Home() {
 
     const itemsList = [
         ['Python', 'C++', 'JavaScript + React'],
-        ['Machine Learning', 'Reinforcement Learning', 'AWS'],
+        ['Data Engineering', 'Machine + Reinforcement Learning', 'Microsoft Azure'],
     ];
 
     return (

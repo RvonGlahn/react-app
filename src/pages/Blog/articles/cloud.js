@@ -15,12 +15,12 @@ Link [hallo](https://google.com)
 `;
 
 const summary = `
-    'With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to' +
+    With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to' +
     ' additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a' +
     'natural lead-in to additional content. With supporting text below as a natWith supporting text below as a natural lead-in' +
     'to additional content.With supporting text below as a natural lead-in to additional content.With supporting text below as' +
     'a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.With' +
-    'supporting text below as a natural lead-in to additional content.ural lead-in to additional content.';
+    'supporting text below as a natural lead-in to additional content.ural lead-in to additional content.
 `;
 
 const title = `AWS Cloud Computing`;

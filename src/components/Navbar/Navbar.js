@@ -34,7 +34,7 @@ function Navbar() {
                     <div className="navbar-container container">
                         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                             <FaDev className="navbar-icon" />
-                            RDev
+                            Rasmus
                         </Link>
                         <div className="menu-icon" onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars />}
